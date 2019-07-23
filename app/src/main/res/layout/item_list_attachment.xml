@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txt_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textSize="12sp"
+            android:textColor="#99383838"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="File Name" />
+
+        <TextView
+            android:id="@+id/txt_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/txt_title1"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#383838"
+            android:lineSpacingExtra="2.7sp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txt_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title1"
+            android:textSize="12sp"
+            android:textColor="#99383838"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignStart="@+id/txt_file_name"
+            android:layout_below="@+id/txt_file_name"
+            android:textSize="12sp"
+            android:textColor="#383838"
+            android:lineSpacingExtra="2.7sp"
+            android:text="-" />
+
+
+        <TextView
+            android:id="@+id/txt_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title2"
+            android:textSize="12sp"
+            android:textColor="#99383838"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="Type" />
+
+        <TextView
+            android:id="@+id/txt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignStart="@+id/txt_description"
+            android:layout_below="@+id/txt_description"
+            android:textSize="12sp"
+            android:textColor="#383838"
+            android:lineSpacingExtra="2.7sp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txt_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title3"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:textColor="#99383838"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="Size" />
+
+        <TextView
+            android:id="@+id/txt_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignStart="@+id/txt_type"
+            android:layout_below="@+id/txt_type"
+            android:textSize="12sp"
+            android:textColor="#383838"
+            android:lineSpacingExtra="2.7sp"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txt_title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title4"
+            android:textSize="12sp"
+            android:textColor="#99383838"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="4sp"
+            android:text="Date Added" />
+
+        <TextView
+            android:id="@+id/txt_date_added"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignStart="@+id/txt_size"
+            android:layout_below="@+id/txt_size"
+            android:textSize="12sp"
+            android:textColor="#383838"
+            android:lineSpacingExtra="2.7sp"
+            android:text="-" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title5"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="#007bff"
+                android:text="Download"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="#007bff"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="#007bff"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
